@@ -56,7 +56,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
 public class NetworkModule {
 
     private static final String INTERCEPTOR_LOG = "INTERCEPTOR_LOG";
-    private static final String BASE_URL = "https://us-central1-fir-chat-ios-2c1d0.cloudfunctions.net/api/";
+    private static final String BASE_URL = "https://socium-chat.cloudfunctions.net/api/";
 
     @Provides @Singleton static HttpLoggingInterceptor provideInterceptor() {
         return new HttpLoggingInterceptor(message -> {
